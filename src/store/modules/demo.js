@@ -84,7 +84,6 @@ const actions = {
         // await web3.eth.getAccounts().then(function(mac){ myAccount = mac })[0];
         myAccount = await web3.eth.getAccounts().then(function(result) { return result[0] });
         console.log("myAccount",myAccount)
-        //console.log(myAccount)  
         return myAccount
     }catch(err){
         console.log(err);
